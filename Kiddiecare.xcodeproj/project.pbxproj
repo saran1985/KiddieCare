@@ -15,6 +15,7 @@
 		B6EED0372469939100A3D757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6EED0352469939100A3D757 /* LaunchScreen.storyboard */; };
 		B6EED0422469939200A3D757 /* KiddiecareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EED0412469939200A3D757 /* KiddiecareTests.swift */; };
 		B6EED04D2469939200A3D757 /* KiddiecareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EED04C2469939200A3D757 /* KiddiecareUITests.swift */; };
+		B6EED05C246998D700A3D757 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EED05B246998D700A3D757 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B6EED0272469938B00A3D757 /* Kiddiecare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiddiecare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EED0272469938B00A3D757 /* KiddiecareExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiddiecareExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EED02A2469938B00A3D757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6EED02C2469938B00A3D757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B6EED02E2469938B00A3D757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		B6EED0482469939200A3D757 /* KiddiecareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiddiecareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EED04C2469939200A3D757 /* KiddiecareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiddiecareUITests.swift; sourceTree = "<group>"; };
 		B6EED04E2469939200A3D757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6EED05B246998D700A3D757 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6EED05C246998D700A3D757 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,13 +86,14 @@
 				B6EED0402469939200A3D757 /* KiddiecareTests */,
 				B6EED04B2469939200A3D757 /* KiddiecareUITests */,
 				B6EED0282469938B00A3D757 /* Products */,
+				B6EED05A246998D700A3D757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B6EED0282469938B00A3D757 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6EED0272469938B00A3D757 /* Kiddiecare.app */,
+				B6EED0272469938B00A3D757 /* KiddiecareExpress.app */,
 				B6EED03D2469939200A3D757 /* KiddiecareTests.xctest */,
 				B6EED0482469939200A3D757 /* KiddiecareUITests.xctest */,
 			);
@@ -128,6 +132,14 @@
 			path = KiddiecareUITests;
 			sourceTree = "<group>";
 		};
+		B6EED05A246998D700A3D757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EED05B246998D700A3D757 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +157,7 @@
 			);
 			name = Kiddiecare;
 			productName = Kiddiecare;
-			productReference = B6EED0272469938B00A3D757 /* Kiddiecare.app */;
+			productReference = B6EED0272469938B00A3D757 /* KiddiecareExpress.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B6EED03C2469939200A3D757 /* KiddiecareTests */ = {
@@ -435,14 +447,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 5AK77LH6MX;
 				INFOPLIST_FILE = Kiddiecare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.reachweb.Kiddiecare;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reachweb.KiddiecareExpress;
+				PRODUCT_NAME = KiddiecareExpress;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,14 +466,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 5AK77LH6MX;
 				INFOPLIST_FILE = Kiddiecare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.reachweb.Kiddiecare;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reachweb.KiddiecareExpress;
+				PRODUCT_NAME = KiddiecareExpress;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
